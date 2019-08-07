@@ -1,1 +1,0 @@
-{"version":3,"sources":["webpack:///./src/assets/index/icon-student.png"],"names":["module","exports","__webpack_require__","p"],"mappings":"qGAAAA,EAAAC,QAAiBC,EAAAC,EAAuB","file":"public/js/chunk-0052ee44.3e71394a.js","sourcesContent":["module.exports = __webpack_public_path__ + \"public/img/icon-student.a8334e5d.png\";"],"sourceRoot":""}

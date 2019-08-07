@@ -1,2 +1,0 @@
-(window["webpackJsonp"]=window["webpackJsonp"]||[]).push([["chunk-0052ee44"],{"835e":function(n,p,e){n.exports=e.p+"public/img/icon-student.a8334e5d.png"}}]);
-//# sourceMappingURL=chunk-0052ee44.3e71394a.js.map
