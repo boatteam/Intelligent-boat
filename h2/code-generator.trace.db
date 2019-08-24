@@ -1,0 +1,33 @@
+2019-08-21 22:58:29 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(50) not null ) [42101-199]
+2019-08-21 23:03:01 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(50) not null ) [42101-199]
+2019-08-21 23:05:14 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(50) not null ) [42101-199]
+2019-08-21 23:12:02 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(30) not null ) [42101-199]
+2019-08-21 23:14:56 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(30) not null ) [42101-199]
+2019-08-21 23:19:20 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(30) not null ) [42101-199]
+2019-08-21 23:20:05 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(30) not null ) [42101-199]
+2019-08-21 23:20:45 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(30) not null ) [42101-199]
+2019-08-21 23:28:03 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(30) not null ) [42101-199]
+2019-08-21 23:49:38 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(30) not null ) [42101-199]
+2019-08-21 23:50:22 jdbc[3]: exception
+org.h2.jdbc.JdbcSQLSyntaxErrorException: Table "USERS" already exists; SQL statement:
+create table users ( id identity, username varchar(30) not null, password varchar(30) not null ) [42101-199]
