@@ -1,4 +1,4 @@
-package edu.zust.boatserver.controller;
+package edu.zust.boatserver.handler;
 
 import edu.zust.boatserver.exception.UserNotFoundException;
 import edu.zust.boatserver.dto.Error;
