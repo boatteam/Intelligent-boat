@@ -7,6 +7,9 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.RestController;
+import org.springframework.web.client.RestTemplate;
+
+import javax.annotation.Resource;
 
 /**
  * Created by HASEE on 2019/8/20
@@ -14,14 +17,14 @@ import org.springframework.web.bind.annotation.RestController;
 @RestController
 @RequestMapping("/boat")
 public class UserController {
-    @Autowired
+    @Resource
     private UserService userService;
 
     @RequestMapping(value = "/login")
     public UserInfo login(@RequestBody UserInfo userInfo){
         UserInfo userInfo1 = userService.login(userInfo);
         if(userInfo1 == null){
-            throw new UserNotFoundException(userInfo.getUsername());
+            throw new UserNotFoundException(userInfo.getName());
         }
         return userInfo1;
     }
