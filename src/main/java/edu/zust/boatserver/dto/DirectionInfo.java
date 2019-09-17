@@ -1,25 +1,13 @@
 package edu.zust.boatserver.dto;
 
+import lombok.Data;
+
 /**
  * Created by HASEE on 2019/8/29
  */
+@Data
 public class DirectionInfo {
+    private Integer boatId;
     private String name;
     private String direction;
-
-    public String getName() {
-        return name;
-    }
-
-    public void setName(String name) {
-        this.name = name;
-    }
-
-    public String getDirection() {
-        return direction;
-    }
-
-    public void setDirection(String direction) {
-        this.direction = direction;
-    }
 }

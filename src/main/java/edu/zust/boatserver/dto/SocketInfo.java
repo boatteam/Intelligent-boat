@@ -5,10 +5,10 @@ import lombok.Data;
 import java.util.List;
 
 /**
- * Created by HASEE on 2019/8/29
+ * Created by HASEE on 2019/9/16 23:02
  */
 @Data
-public class BoatDataInfo {
+public class SocketInfo {
     private String name;
-    private List<Point> points;
+    private List<BoatData> boatDataList;
 }

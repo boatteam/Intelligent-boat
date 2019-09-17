@@ -13,9 +13,10 @@ import org.springframework.web.socket.config.annotation.WebSocketHandlerRegistry
 @Configuration
 @EnableWebSocket
 public class WebSocketConfig implements WebSocketConfigurer {
+
     @Override
     public void registerWebSocketHandlers(WebSocketHandlerRegistry webSocketHandlerRegistry) {
-        webSocketHandlerRegistry.addHandler(boatWebSocketHandler(), "/boat")
+        webSocketHandlerRegistry.addHandler(boatWebSocketHandler(), "/boatControl")
                 .setAllowedOrigins("*")
                 .withSockJS();
     }
@@ -24,4 +25,5 @@ public class WebSocketConfig implements WebSocketConfigurer {
     public BoatWebSocketHandler boatWebSocketHandler(){
         return new BoatWebSocketHandler();
     }
+    
 }
