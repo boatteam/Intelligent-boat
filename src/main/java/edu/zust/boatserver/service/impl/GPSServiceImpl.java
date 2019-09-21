@@ -12,6 +12,8 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.util.List;
+
 /**
  * Created by HASEE on 2019/9/16 23:16
  */
@@ -37,6 +39,19 @@ public class GPSServiceImpl implements GPSService {
         }
         if (gps.getId()!=null){
             gpsInfo.setId(gps.getId());
+            return gpsInfo;
+        }
+        return null;
+    }
+
+    @Override
+    public GPSInfo findLastGPS(Integer boatId) {
+        List<GPS> gpsList = gpsRepository.findAllByBoat(boatRepository.getOne(boatId));
+        GPS gps = gpsList.get(gpsList.size()-1);
+        GPSInfo gpsInfo = new GPSInfo();
+        if (gps!=null){
+            BeanUtils.copyProperties(gps, gpsInfo);
+            gpsInfo.setBoatId(gps.getBoat().getId());
             return gpsInfo;
         }
         return null;

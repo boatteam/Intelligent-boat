@@ -11,4 +11,5 @@ public class PHInfo {
     private Integer boatId;
     private Integer gpsId;
     private Double phValue;
+    private String waterQuality;
 }

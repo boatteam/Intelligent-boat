@@ -20,6 +20,7 @@ public class BoatWebSocketHandler extends AbstractWebSocketHandler {
     @Override
     public void afterConnectionEstablished(WebSocketSession session) throws Exception {
         log.info("Connection established");
+
     }
 
     @Override

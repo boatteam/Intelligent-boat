@@ -15,6 +15,7 @@ import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 import org.springframework.transaction.annotation.Transactional;
 
+import java.text.SimpleDateFormat;
 import java.util.ArrayList;
 import java.util.List;
 
@@ -50,6 +51,8 @@ public class PHServiceImpl implements PHService {
 
     @Override
     public List<BoatData> getAllPoints(Integer boatId) {
+        String strDateFormat = "yyyy-MM-dd HH:mm:ss";
+        SimpleDateFormat sdf = new SimpleDateFormat(strDateFormat);
         List<PH> phList = phRepository.findAllByBoat(boatRepository.getOne(boatId));
         List<BoatData> boatDataList = new ArrayList<>();
         if (phList!=null){
@@ -58,7 +61,7 @@ public class PHServiceImpl implements PHService {
                 boatData.setPH(p.getPhValue());
                 boatData.setLongitude(p.getGps().getLongitude());
                 boatData.setLatitude(p.getGps().getLatitude());
-                boatData.setTimeStamp(p.getGps().getTimestamp());
+                boatData.setTimeStamp(sdf.format(p.getGps().getTimestamp()));
                 boatDataList.add(boatData);
             }
             return boatDataList;

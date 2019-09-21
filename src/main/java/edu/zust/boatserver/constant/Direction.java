@@ -5,5 +5,5 @@ package edu.zust.boatserver.constant;
  * @author HASEE
  */
 public enum Direction {
-    UP, DOWN, LEFT, RIGHT;
+    UP, DOWN, LEFT, RIGHT, INIT;
 }

@@ -7,4 +7,5 @@ import edu.zust.boatserver.dto.GPSInfo;
  */
 public interface GPSService {
     GPSInfo addGPS(GPSInfo gpsInfo);
+    GPSInfo findLastGPS(Integer boatId);
 }
